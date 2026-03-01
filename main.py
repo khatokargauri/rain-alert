@@ -26,7 +26,7 @@ if will_rain:
         .create(
         #messaging_service_sid='MG87f3b73a7762f2a18defff10c03c1f25',
         body="Its going to rain today. Remember to bring an umbrella.",
-        from_ = os.environ.get("TWILIO_VIRTUAL_NUMBER "),
+        from_ = os.environ.get("TWILIO_VIRTUAL_NUMBER"),
         to = os.environ.get("TWILIO_VERIFIED_NUMBER")
     )
     print(message.status)
